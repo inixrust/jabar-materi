@@ -70,6 +70,7 @@
 | `ENOENT ... scandir 'C:\C:\...'` saat lint | Peserta memakai `main`, bukan `starter`. Pindah ke `starter`. |
 | Semua berkas dilindungi "berubah sejak persetujuan" | Sama seperti di atas (CRLF), atau langkah 1 belum dilakukan |
 | Halaman web error "... is not a function" setelah `npm run build` saat `dev` berjalan | Mulai ulang `npm run dev:web` |
+| `typecheck` gagal: `Cannot find module '../../app/catatan/page.js'` di `.next/types` | Sisa build dari branch lain (misalnya setelah melihat `solution`). Hapus `web/.next` dan `web/tsconfig.tsbuildinfo`, lalu ulangi. |
 | Subagent atau rules tidak terbaca | Mulai ulang sesi Claude Code; pastikan folder yang dibuka adalah `proyek-contoh/` |
 | Hook tidak jalan | `/hooks` untuk melihat apakah terdaftar; pastikan `node` ada di PATH terminal Claude Code |
 | `EADDRINUSE` | Port 3000/4000 masih dipakai proses lama |

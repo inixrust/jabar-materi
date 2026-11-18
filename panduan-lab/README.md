@@ -31,6 +31,9 @@ git show solution~1 --stat                   # isi satu commit (di sini: Lab 5)
 git checkout solution -- proyek-contoh/specs/catatan.plan.md   # ambil satu berkas solusi
 ```
 
+Setelah berpindah branch, hapus cache build web bila `typecheck` atau `build` mengeluh tentang
+berkas yang tidak ada: `rm -rf web/.next web/tsconfig.tsbuildinfo`.
+
 Tertinggal di satu lab? Simpan pekerjaanmu (`git stash -u`), lalu lanjut dari commit solusi lab
 sebelumnya: `git switch -c lanjut <hash commit>`.
 
