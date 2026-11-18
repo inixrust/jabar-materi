@@ -19,6 +19,10 @@ export function createApp() {
       limit: 100,
       standardHeaders: true,
       legacyHeaders: false,
+      // Format error standar (NFR-002, ADR-008). Bawaan pustaka berupa teks HTML.
+      message: {
+        error: { code: 'RATE_LIMITED', message: 'Terlalu banyak permintaan. Coba lagi nanti.' },
+      },
     }),
   );
 

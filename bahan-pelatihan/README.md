@@ -45,6 +45,14 @@ repositori/
 
 ## Hook penyaring tes (opsional, hemat token)
 
+**Versi Node (disarankan, juga untuk Windows):** `hooks/filter-test-output.mjs` tidak butuh `jq`
+dan polanya sudah cocok dengan `node:test` (`✖`, `ℹ fail`, TAP `not ok`). Salin ke
+`.claude/hooks/` di proyek, lalu daftarkan di `.claude/settings.local.json` (contoh di kepala
+berkas dan di `panduan-lab/lab-03-token.md`).
+
+**Versi Bash (asli):** polanya (`FAIL|ERROR`) ditulis untuk pelari tes lain dan tidak menangkap
+kegagalan `node:test`. Sesuaikan polanya bila dipakai.
+
 1. Salin `hooks/filter-test-output.sh` ke `~/.claude/hooks/` lalu jalankan `chmod +x ~/.claude/hooks/filter-test-output.sh`.
 2. Gabungkan isi `hooks/settings.snippet.json` ke `~/.claude/settings.json`.
 3. Pastikan `jq` terpasang. Periksa dengan perintah `/hooks` bahwa hook muncul di PreToolUse.

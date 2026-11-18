@@ -3,6 +3,8 @@
 Aplikasi web Next.js 16 (**App Router**) dengan TypeScript strict dan React 19.
 Gaya memakai CSS Modules dan design token.
 
+Catatan versi Next.js dari `next dev` (berkas buatan Next.js, jangan diubah): @AGENTS.md
+
 ## Perintah
 - Dev: `npm run dev -w web` (port 3000)
 - Build: `npm run build -w web`

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 import { getHealth } from '@/lib/api';
 
@@ -10,6 +11,9 @@ export default async function HomePage() {
       <p>
         Kerangka proyek pelatihan Developing dengan AI. Mulailah dengan meminta Claude
         menjelaskan struktur proyek ini.
+      </p>
+      <p>
+        <Link href="/catatan">Buka halaman Catatan</Link>
       </p>
       <Card title="Status API">
         {health ? (
