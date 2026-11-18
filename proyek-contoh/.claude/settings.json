@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "deny": [
+      "Edit(/docs/prd.md)",
+      "Edit(/docs/ard.md)",
+      "Edit(/docs/standar-secure-coding.md)",
+      "Edit(/docs/dependencies.json)",
+      "Edit(/scripts/check-compliance.mjs)",
+      "Edit(/api/eslint.config.js)",
+      "Edit(/web/eslint.config.mjs)",
+      "Edit(/web/scripts/check-tokens.mjs)",
+      "Edit(/.claude/settings.json)",
+      "Edit(/docs/persetujuan.sha256)",
+      "Edit(/scripts/setujui-dokumen.mjs)",
+      "Bash(npm run docs:setujui*)",
+      "Bash(node scripts/setujui-dokumen.mjs*)"
+    ]
+  }
+}

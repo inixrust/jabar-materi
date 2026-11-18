@@ -1,0 +1,22 @@
+{
+  "_catatan": "Daftar paket yang boleh dipakai (ADR-007, SC-11). Hanya manusia yang mengubah berkas ini. Menambah paket: usulkan lewat plan, tech lead menyetujui, lalu manusia menambahkan baris di sini.",
+  "packages": [
+    { "scope": "api", "name": "express", "adr": "ADR-002", "alasan": "Kerangka kerja HTTP" },
+    { "scope": "api", "name": "zod", "adr": "ADR-003", "alasan": "Validasi skema" },
+    { "scope": "api", "name": "helmet", "adr": "ADR-009", "alasan": "Header keamanan" },
+    { "scope": "api", "name": "cors", "adr": "ADR-009", "alasan": "CORS dengan daftar asal" },
+    { "scope": "api", "name": "express-rate-limit", "adr": "ADR-009", "alasan": "Pembatasan laju" },
+    { "scope": "api", "name": "eslint", "adr": "ADR-001", "alasan": "Lint dan penegakan standar (dev)" },
+    { "scope": "api", "name": "@eslint/js", "adr": "ADR-001", "alasan": "Aturan dasar ESLint (dev)" },
+    { "scope": "api", "name": "globals", "adr": "ADR-001", "alasan": "Daftar global Node untuk ESLint (dev)" },
+    { "scope": "web", "name": "next", "adr": "ADR-006", "alasan": "Kerangka kerja web" },
+    { "scope": "web", "name": "react", "adr": "ADR-006", "alasan": "Pustaka UI" },
+    { "scope": "web", "name": "react-dom", "adr": "ADR-006", "alasan": "Renderer React" },
+    { "scope": "web", "name": "typescript", "adr": "ADR-006", "alasan": "TypeScript strict (dev)" },
+    { "scope": "web", "name": "@types/node", "adr": "ADR-006", "alasan": "Tipe Node (dev)" },
+    { "scope": "web", "name": "@types/react", "adr": "ADR-006", "alasan": "Tipe React (dev)" },
+    { "scope": "web", "name": "@types/react-dom", "adr": "ADR-006", "alasan": "Tipe React DOM (dev)" },
+    { "scope": "web", "name": "eslint", "adr": "ADR-001", "alasan": "Lint dan penegakan standar (dev)" },
+    { "scope": "web", "name": "typescript-eslint", "adr": "ADR-006", "alasan": "Lint TypeScript (dev)" }
+  ]
+}
