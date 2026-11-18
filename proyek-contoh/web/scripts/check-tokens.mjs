@@ -2,8 +2,10 @@
 // Dijalankan oleh `npm run lint`. Berkas styles/tokens.css dikecualikan karena itulah sumbernya.
 import { readdirSync, readFileSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const root = new URL('..', import.meta.url).pathname;
+// fileURLToPath agar path benar di Windows (URL.pathname menghasilkan /C:/...).
+const root = fileURLToPath(new URL('..', import.meta.url));
 const skipDirs = new Set(['node_modules', '.next']);
 const allowed = join('styles', 'tokens.css');
 const colorPattern = /#[0-9a-fA-F]{3,8}\b|\b(?:rgb|rgba|hsl|hsla)\(/;

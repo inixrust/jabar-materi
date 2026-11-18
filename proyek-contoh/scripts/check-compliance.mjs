@@ -197,7 +197,9 @@ if (!existsSync(approvalPath)) {
 } else {
   const tercatat = new Map(
     read(approvalPath)
-      .split('\n')
+      // \r?\n: berkas bisa ber-CRLF bila Git di Windows memakai core.autocrlf=true.
+      .split(/\r?\n/)
+      .map((l) => l.trim())
       .filter(Boolean)
       .map((l) => {
         const [hash, ...path] = l.split(/\s+/);

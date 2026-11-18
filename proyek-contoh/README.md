@@ -8,6 +8,12 @@ Isinya sengaja kecil dan rapi supaya Claude punya pola yang jelas untuk ditiru.
 | `api/` | Express 5, JavaScript (ESM), zod, helmet, rate limit | 4000 |
 | `web/` | Next.js 16 (App Router), React 19, TypeScript strict | 3000 |
 
+> **Branch `starter` dan `solution`.** Di branch `starter`, berkas standar yang menjadi hasil
+> kerja peserta **belum ada**: `CLAUDE.md` (root, `api/`, `web/`), `.claude/rules/`, `.claude/agents/`,
+> dan `docs/standarisasi.md`. Berkas itu dibuat di Lab 4 dan Lab 5 dari template di
+> `../bahan-pelatihan/`. Peta proyek di bawah menggambarkan keadaan akhir (branch `solution`).
+> Langkah lab ada di `../panduan-lab/`.
+
 ## Persiapan
 
 Kebutuhan: Node.js 20.12 atau lebih baru, npm, VS Code dengan ekstensi Claude Code.
@@ -40,7 +46,6 @@ Halaman web menampilkan status API. Jika API belum jalan, kartu status menampilk
 | `npm run lint` | Lint API dan web, termasuk penegakan standar |
 | `npm run typecheck` | Pemeriksaan tipe TypeScript web |
 | `npm run build` | Build produksi web |
-
 | `npm run check:compliance` | Memeriksa keterlacakan ke PRD/ARD/standar, allowlist dependensi, pola rahasia |
 | `npm run verify` | Semua gerbang sekaligus: lint, typecheck, tes, kepatuhan |
 
@@ -107,3 +112,7 @@ oleh subagent `compliance-reviewer`.
 | Subagent tidak terbaca | Folder `.claude/agents/` dibuat saat sesi berjalan. Mulai ulang sesi Claude Code. |
 | `process.loadEnvFile is not a function` | Node terlalu lama. Pakai Node 20.12 atau lebih baru. |
 | `npm run build` mengubah `tsconfig.json` | Normal. Next.js menambahkan `.next/dev/types/**/*.ts` pada `include`. |
+| `web/next-env.d.ts` berubah setelah `dev` atau `build` | Normal, berkas buatan Next.js. Kembalikan dengan `git checkout -- web/next-env.d.ts`. |
+| `web/AGENTS.md` muncul atau berubah | Dibuat oleh `next dev` (Next.js 16.4+). Biarkan dan commit. Claude Code membaca `CLAUDE.md`, bukan `AGENTS.md` (lihat Lab 4). |
+| `check:compliance`: "berubah sejak persetujuan terakhir" | Berkas yang dilindungi berubah. Jika perubahannya disetujui, **manusia** menjalankan `npm run docs:setujui`. |
+| `npm audit` melaporkan `picomatch` tingkat tinggi | Dependensi transitif `typescript-eslint` (hanya untuk lint, bukan runtime). `npm audit --omit=dev` harus bersih. Catat sebagai risiko yang diterima sampai ada versi perbaikan. |

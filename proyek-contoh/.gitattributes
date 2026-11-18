@@ -1,0 +1,3 @@
+# Berkas persetujuan dibaca per baris oleh check-compliance; paksa LF di semua OS.
+docs/persetujuan.sha256 text eol=lf
+*.sh text eol=lf
