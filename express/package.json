@@ -1,0 +1,20 @@
+{
+  "name": "proyek-contoh",
+  "private": true,
+  "description": "Kerangka proyek pelatihan Developing dengan AI (Claude Code di VS Code)",
+  "workspaces": [
+    "api",
+    "web"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w api",
+    "dev:web": "npm run dev -w web",
+    "test": "npm test -w api",
+    "lint": "npm run lint -w api && npm run lint -w web",
+    "typecheck": "npm run typecheck -w web",
+    "build": "npm run build -w web"
+  },
+  "engines": {
+    "node": ">=20.12"
+  }
+}
