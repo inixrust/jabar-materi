@@ -1,0 +1,5 @@
+# Dibuat ulang otomatis saat build
+__pycache__/
+build/icons/
+build/viz/out/
+build/anim_plan.json
