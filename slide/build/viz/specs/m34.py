@@ -204,8 +204,8 @@ def target_verifikasi():
                  say='Panah merah kembali ke Claude untuk setiap permintaan perbaikan. Setiap putaran mengirim ulang seluruh '
                      'konteks, jadi putaran perbaikan adalah pemborosan token terbesar.',
                  ask='Berapa putaran perbaikan yang Anda hitung di pendekatan A Lab 3?'):
-        d.arrow(436, 92, 72, 112, color='red', sw=4, curve=34)
-        d.pill(512, 48, 78, 30, '3+ putaran', fill='red', size=15)
+        d.arrow(440, 94, 92, 100, color='red', sw=4, curve=-88)
+        d.pill(474, 104, 100, 30, '3+ putaran', fill='red', size=15)
     with d.layer('Target: tes yang harus lulus',
                  say='Dengan target verifikasi, misalnya tes yang harus lulus atau keluaran yang diharapkan, Claude bisa '
                      'memeriksa dirinya sendiri. Ia menjalankan tes, membaca kegagalan, dan memperbaiki tanpa menunggu Anda.',
