@@ -1,7 +1,7 @@
 # Panduan Lab: Developing dengan AI (Claude Code di VS Code)
 
 Materi dan langkah lab untuk pelatihan 1 hari *Efisiensi Token dan Standarisasi*
-(lihat `Silabus_Developing_AI_Claude_1_Hari.docx`). Semua lab memakai satu proyek:
+Semua lab memakai satu proyek:
 `proyek-contoh/` (Express + Next.js, aplikasi **Catatan Tim**).
 
 ## Branch
