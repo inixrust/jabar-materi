@@ -206,7 +206,7 @@ def titik_aman():
                      'atau berkas yang tidak diminta ikut berubah.',
                  ask='Tanda apa yang membuat Anda curiga hasil agent melenceng?'):
         d.path('M202,150 C260,150 270,110 330,110 L470,110', stroke='red', sw=4, dash='8 6')
-        d.label(300, 70, 160, 30, 'agent mengubah 12 berkas', fill='white', color='red', stroke='red', size=14)
+        d.label(290, 68, 200, 30, 'agent mengubah 12 berkas', fill='white', color='red', stroke='red', size=14)
         d.cross(486, 110, 14)
         d.text(486, 140, 'melenceng', size=16, color='red', bold=True)
     with d.layer('git restore . atau /rewind untuk kembali',
