@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Deck: Developing dengan AI (Claude Code di VS Code) - Efisiensi Token dan Standarisasi. 1 hari, 6 modul.
-Sumber materi: Silabus_Developing_AI_Claude_1_Hari.docx, panduan-lab/lab-01..06, bahan-pelatihan/, proyek-contoh/.
+Sumber materi: silabus pelatihan, panduan-lab/lab-01..06, bahan-pelatihan/, proyek-contoh/.
 Slide konsep berilustrasi: lapis teks di sini hanya cadangan; ilustrasi ada di viz/specs/*.py (kunci = judul persis)."""
 from lib import *
 from code import code_slide

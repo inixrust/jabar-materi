@@ -1,6 +1,6 @@
 # Materi Pelatihan: Developing dengan AI (Claude Code di VS Code)
 
-Pelatihan 1 hari tentang efisiensi token dan standarisasi. Silabus: `Silabus_Developing_AI_Claude_1_Hari.docx`.
+Pelatihan 1 hari tentang efisiensi token dan standarisasi.
 
 | Folder | Isi |
 |---|---|
